@@ -17,8 +17,12 @@ async function getBuscarLivrosDaAPI() {
         // Exibindo os livros na console como tabela (para depuração)
         console.table(livros);
 
-        // Chamando a função para exibir os livros na tela
-        exibirOsLivrosNaTela(livros);
+       
+        let livrosComDesconto = aplicarDesconto(livros);
+
+        // Chamando a função para exibir os livros com desconto na tela
+        exibirOsLivrosNaTela(livrosComDesconto);
+
     } catch (error) {
         console.error('Erro ao buscar livros:', error);
     }
