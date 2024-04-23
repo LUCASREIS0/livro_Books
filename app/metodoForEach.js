@@ -4,6 +4,10 @@ const elementoParaInserirLivros = document.getElementById('livros');
 
 // Função para exibir os livros na tela
 function exibirOsLivrosNaTela(listaDeLivros) {
+
+    //Sempre que clicarmos, o conteúdo será apagado e apenas os livros correspondentes à categoria selecionada serão exibidos.
+    elementoParaInserirLivros.innerHTML = ''
+    
     // Itera sobre cada livro na lista e cria o HTML correspondente para exibição
     listaDeLivros.forEach(livro => {
         elementoParaInserirLivros.innerHTML += `
