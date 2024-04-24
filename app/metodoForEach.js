@@ -1,7 +1,6 @@
 // Elemento onde os livros serão inseridos na interface HTML
 const elementoParaInserirLivros = document.getElementById('livros');
 
-
 // Função para exibir os livros na tela
 function exibirOsLivrosNaTela(listaDeLivros) {
 
@@ -21,7 +20,6 @@ function exibirOsLivrosNaTela(listaDeLivros) {
                 </div>
             </div>
         `;
-        
         //livro.preco.toFixed(2) retorna uma string que representa o preço do livro formatado com duas casas decimais, o que é útil para exibir preços com uma precisão específica ao trabalhar com valores monetários.
     });
 }

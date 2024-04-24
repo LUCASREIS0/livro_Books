@@ -4,7 +4,6 @@ let livros = [];
 // URL da API que contém os dados dos livros
 const endpointDaAPI = 'https://guilhermeonrails.github.io/casadocodigo/livros.json';
 
-
 // Função assíncrona para buscar os livros da API
 async function getBuscarLivrosDaAPI() {
     try {
@@ -17,7 +16,6 @@ async function getBuscarLivrosDaAPI() {
         // Exibindo os livros na console como tabela (para depuração)
         console.table(livros);
 
-       
         let livrosComDesconto = aplicarDesconto(livros);
 
         // Chamando a função para exibir os livros com desconto na tela
