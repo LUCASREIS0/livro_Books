@@ -6,7 +6,8 @@ btnOrdenarPorPreco.addEventListener('click', ordenarLivrosPorPreco);
 
 // Definindo a função que será chamada quando o botão for clicado
 function ordenarLivrosPorPreco() {
-    // Ordenando o array de livros ('livros' é um array de objetos com a propriedade 'preco') do menor para o maior preço
+    // Ordenando o array de livros do menor para o maior preço => (a - b)
+    // ('livros' é um array de objetos com a propriedade 'preco') 
     let livrosOrdenados = livros.sort((a, b) => a.preco - b.preco);
 
     // Chamando uma função para exibir os livros ordenados na tela
