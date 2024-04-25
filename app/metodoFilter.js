@@ -8,8 +8,8 @@ function filtrarLivros() {
     const elementoBtn = document.getElementById(this.id)
     // Obtém o valor da propriedade 'value' do botão, que representa a categoria
     const categoria = elementoBtn.value
-    // Filtra a matriz de livros com base na categoria selecionada
-    let livrosFiltrados = livros.filter(livro => livro.categoria == categoria)
+    // Filtra a matriz de livros com base na categoria selecionada ultilizando o operador ternário
+    let livrosFiltrados = categoria == 'disponivel' ? livros.filter(livro => livro.quantidade > 0) : livros.filter(livro => livro.categoria == categoria)
     // Exibe os livros filtrados no console como uma tabela
     console.table(livrosFiltrados)
 
