@@ -4,7 +4,7 @@ botoes.forEach(btn => btn.addEventListener('click', filtrarLivros))
 
 // Função para filtrar livros com base na categoria associada ao botão clicado
 function filtrarLivros() {
-    
+
     // Obtém o elemento do botão que foi clicado usando 'this.id' para identificar o ID do botão
     const elementoBtn = document.getElementById(this.id)
 
@@ -22,7 +22,8 @@ function filtrarLivros() {
 
     // Exibe o valor total dos livros disponiveis 
     if (categoria == 'disponivel') {
-        exibirValorTotalDosLivrosDisponiveisNaTela()
+        const valorTotal = calcularValorTotalDeLivrosDisponiveis(livrosFiltrados)
+        exibirValorTotalDosLivrosDisponiveisNaTela(valorTotal)
     }
 }
 
@@ -39,10 +40,10 @@ function filtrarPorDisponibilidade() {
 }
 
 //Criando a função que ira adicionar o valor disponivel no HTML 
-function exibirValorTotalDosLivrosDisponiveisNaTela() {
+function exibirValorTotalDosLivrosDisponiveisNaTela(valorTotal) {
     elementoComValorTotalDeLivrosDisponiveis.innerHTML = `
     <div class="livros__disponiveis">
-      <p>Todos os livros disponíveis por R$ <span id="valor">299,00</span></p>
+      <p>Todos os livros disponíveis por R$ <span id="valor">${valorTotal}</span></p>
     </div>
     `
 }
