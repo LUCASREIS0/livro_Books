@@ -1,8 +1,14 @@
 // Elemento onde os livros serão inseridos na interface HTML
 const elementoParaInserirLivros = document.getElementById('livros');
 
+//Definindo a constante do valor total dos livros disponiveis 
+const elementoComValorTotalDeLivrosDisponiveis = document.getElementById('valor_total_livros_disponiveis')
+
 // Função para exibir os livros na tela
 function exibirOsLivrosNaTela(listaDeLivros) {
+
+    // Nao queremos que esse conteúdo seja exibido inicialmente na tela
+    elementoComValorTotalDeLivrosDisponiveis.innerHTML = ''
 
     //Sempre que clicarmos, o conteúdo será apagado e apenas os livros correspondentes à categoria selecionada serão exibidos.
     elementoParaInserirLivros.innerHTML = ''
