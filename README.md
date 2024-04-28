@@ -2,6 +2,14 @@
 
 Este curso prático de JavaScript abrange os principais métodos de array do JavaScript, oferecendo uma abordagem moderna e eficiente para manipulação de dados em projetos do mundo real.
 
+## Projeto Disponibilizado:
+
+- 📚 **Livro Books:** Um projeto prático desenvolvido durante o curso para demonstrar a aplicação dos métodos de array em um contexto real. [Visualizar Projeto](https://livro-books.vercel.app/)
+
+## Anotações:
+
+- 📝 **Mais detalhes e anotações:**  Confira o [documento no Notion](https://www.notion.so/JavaScript-m-todos-de-array-8ce6cf375a1940d7a7a9fdc4e5288f26).
+
 ## Conteúdo do Curso:
 
 - **Utilização dos Principais Métodos de Array:** Aprendi a aplicar métodos como `forEach`, `map`, `filter`, `sort` e `reduce` para manipular arrays de forma eficaz.
@@ -13,14 +21,6 @@ Este curso prático de JavaScript abrange os principais métodos de array do Jav
 - **Filtragem e Ordenação com `filter` e `sort`:** Aprendi a utilizar os métodos `filter` e `sort` para filtrar e ordenar elementos de um array, melhorando a organização e apresentação dos dados.
 
 - **Redução de uma Array com `reduce`:** Explorei o método `reduce` para reduzir toda uma array em apenas um elemento, facilitando cálculos complexos e agregações de dados.
-
-## Projeto Disponibilizado:
-
-- 📚 **Livro Books:** Um projeto prático desenvolvido durante o curso para demonstrar a aplicação dos métodos de array em um contexto real. [Visualizar Projeto](https://livro-books.vercel.app/)
-
-## Anotações:
-
-Para mais detalhes e anotações sobre este curso, confira o [documento no Notion](https://www.notion.so/JavaScript-m-todos-de-array-8ce6cf375a1940d7a7a9fdc4e5288f26).
 
 ---
 <div align="center">
